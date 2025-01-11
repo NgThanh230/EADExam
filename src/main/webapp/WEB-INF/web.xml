@@ -1,0 +1,19 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    <servlet>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <servlet-class>com.example.eadexam.Controller.AddStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <url-pattern>/addStudent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddScoreServlet</servlet-name>
+        <servlet-class>com.example.eadexam.Controller.AddScoreServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddScoreServlet</servlet-name>
+        <url-pattern>/addScore</url-pattern>
+    </servlet-mapping>
+</web-app>

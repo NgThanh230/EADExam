@@ -2,6 +2,8 @@ package com.example.eadexam.Entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "student_t")
 public class Student {
@@ -17,7 +19,16 @@ public class Student {
 
     @Column(name = "address")
     private String address;
-    
+
+
+    private List<StudentScore> scores;
+    public List<StudentScore> getScores() {
+        return scores;
+    }
+
+    public void setScores(List<StudentScore> scores) {
+        this.scores = scores;
+    }
     public Student() {
         
     }

@@ -23,7 +23,10 @@ public class StudentScore {
     @Column(name = "score2", nullable = false)
     private double score2;
 
-    public StudentScore() {
+    public double getGrade() {
+        return 0.3 * score1 + 0.7 * score2;
+    }
+    public StudentScore(int studentId, int subjectId, double score1, double score2) {
 
     }
 
